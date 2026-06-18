@@ -3614,4 +3614,290 @@ footer .row {
   }
 }
 
+/* ===================================================================
+ * New conversion sections
+ * =================================================================== */
+.home-content__lead {
+  max-width: 58rem;
+  margin-top: 1.8rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.home-content__buttons {
+  gap: 1.2rem;
+}
+
+.s-pricing,
+.s-testimonials,
+.s-faq {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.s-pricing {
+  background: #f6f6f6;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+  max-width: 120rem;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.2rem;
+  padding: 4rem 3.2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.04);
+  height: 100%;
+}
+
+.pricing-card--featured {
+  border-color: #000;
+  transform: translateY(-0.8rem);
+}
+
+.pricing-card__tag {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.333;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.pricing-card__tag--accent {
+  color: #000;
+}
+
+.pricing-card__price {
+  display: block;
+  margin: 2rem 0;
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: #111;
+}
+
+.pricing-card ul {
+  margin: 0 0 3rem;
+  padding-left: 1.8rem;
+}
+
+.pricing-card li {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.pricing-card .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  padding: 3.2rem;
+  background: #111;
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 1.2rem;
+  height: 100%;
+}
+
+.testimonial-card p {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.84);
+  font-family: "montserrat-light", serif;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.testimonial-card strong,
+.testimonial-card span {
+  display: block;
+  font-family: "montserrat-regular", sans-serif;
+}
+
+.testimonial-card span {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.faq-list {
+  max-width: 90rem;
+}
+
+.faq-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 2rem;
+  line-height: 1.333;
+  color: #111;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 1rem 0 0;
+  color: #666;
+  max-width: 72rem;
+  font-family: "montserrat-light", serif;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .pricing-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card--featured {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .s-pricing,
+  .s-testimonials,
+  .s-faq {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .home-content__lead {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-top: 1.4rem;
+  }
+
+  .home-content__main {
+    padding-top: 9rem;
+  }
+
+  .home-content h1 {
+    font-size: 4.4rem;
+    line-height: 1.2;
+  }
+
+  .home-content h3 {
+    margin-bottom: 0.9rem;
+  }
+
+  .home-content__buttons {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 4.2rem;
+  }
+
+  .home-content__buttons .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .pricing-card,
+  .testimonial-card {
+    padding: 2.8rem 2.4rem;
+  }
+
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-card .btn {
+    margin-top: auto;
+  }
+
+  .pricing-card__price {
+    font-size: 2.4rem;
+    margin: 1.6rem 0;
+  }
+
+  .faq-item summary {
+    font-size: 1.8rem;
+    line-height: 1.45;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .s-pricing,
+  .s-testimonials,
+  .s-faq {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .home-content__lead {
+    font-size: 1.5rem;
+  }
+
+  .home-content__main {
+    padding-top: 7.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 3.7rem;
+  }
+
+  .pricing-card,
+  .testimonial-card {
+    padding: 2.4rem 2rem;
+  }
+
+  .pricing-card h3,
+  .testimonial-card p {
+    margin-bottom: 1.2rem;
+  }
+
+  .pricing-card ul {
+    margin-bottom: 2.4rem;
+  }
+
+  .pricing-card .btn,
+  .contact-secondary .btn,
+  .contact-primary .btn--primary {
+    min-height: 5rem;
+  }
+
+  .footer-subscribe #mc-form input[type="submit"] {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .footer-subscribe #mc-form input[type="email"] {
+    padding-right: 20px;
+    text-align: center;
+    background-position: 20px center, 0 0;
+  }
+
+  .contact-secondary .btn {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
